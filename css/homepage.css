@@ -114,6 +114,14 @@ body {
 }
 .basic {
   padding: 0 7%;
+  display: flex;
+}
+.basic__introduction {
+  flex: 1;
+}
+.basic__address-1, .basic__address-2 {
+  flex: 2;
+  margin-left: 30px;
 }
 .company-introduction {
   height: 100%;
@@ -134,4 +142,24 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.business-intro {
+  padding: 0 7%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title-zh, .section-title-en {
+  font-size: 30px;
+}
+.section-title-divider {
+  width: 100px;
+  height: 4px;
+  background-color: #10458F;
 }
