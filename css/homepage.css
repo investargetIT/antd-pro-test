@@ -34,7 +34,7 @@ body {
   /* display: flex; */
   color: #fff;
   /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5); */
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  /* box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
 }
 
 .cover-container {
@@ -120,9 +120,9 @@ body {
 .basic__introduction {
   flex: 1;
 }
-.basic__address-1, .basic__address-2 {
-  flex: 2;
-  margin-left: 30px;
+.basic__address-1, .basic__address-2, .basic__address-3 {
+  flex: 1;
+  margin-left: 10px;
 }
 .company-introduction {
   height: 100%;
@@ -145,6 +145,15 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+.address-3 {
+  padding-top: 20px;
+  height: 20vw;
+  background: url(/img/hanson-lu-zYZyhl0bkjY-unsplash.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .business-intro {
   padding: 0 7%;
@@ -159,7 +168,7 @@ body {
   align-items: center;
 }
 .section-title-zh, .section-title-en {
-  font-size: 30px;
+  font-size: 24px;
 }
 .section-title-divider {
   width: 100px;
@@ -313,7 +322,7 @@ body {
   margin-left: 4%;
   margin-top: 3vw;
   margin-bottom: 3vw;
-  width: 17%;
+  height: 42px;
 }
 .transparent {
   width: 100%;
@@ -333,17 +342,21 @@ body {
 }
 .header-logo {
   display: block;
-  width: 16vw;
-  margin: 0 auto;
+  height: 42px;
+  margin-left: 30px;
 }
 .logo-container {
   flex: 5;
 }
+.nav-bar {
+  display: flex;
+  width: 600px;
+}
 .nav-item {
-  flex: 2;
+  flex: 1;
 }
 .nav-link {
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .cover-heading {
