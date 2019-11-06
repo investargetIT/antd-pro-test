@@ -378,6 +378,7 @@ body {
   border-color: rgb(12, 105, 168);
 }
 .arrow {
+  cursor: pointer;
   margin: 0 auto;
   width: 47px;
   height: 19px;

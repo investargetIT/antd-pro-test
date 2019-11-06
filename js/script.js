@@ -7,3 +7,8 @@ if (hours >= 17) {
   backgroundImage = 'url(/img/denys-nevozhai-D8iZPlX-2fs-unsplash.jpg)';
 }
 coverBanner.style.backgroundImage = backgroundImage;
+
+function handleArrowIconClicked() {
+  const element = document.getElementById('basic-info');
+  element.scrollIntoView({ behavior: 'smooth' });
+}
