@@ -169,7 +169,7 @@ body {
 .business-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 30px;
+  column-gap: 1px;
 }
 .business-title {
   display: flex;
@@ -177,12 +177,12 @@ body {
   align-items: center;
 }
 .business-title-zh, .business-title-en {
-  font-size: 36px;
+  font-size: 23px;
   font-weight: bolder;
   text-align: center;
 }
 .business-title-en {
-  font-size: 24px;
+  font-size: 23px;
 }
 .business-title-divider {
   width: 100px;
@@ -190,9 +190,9 @@ body {
   background-color: #10458F;
 }
 .private-finance {
-  padding-left: 10px;
+  /* padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 5vw;
+  padding-bottom: 5vw; */
   height: 40vw;
   background: url(/img/christian-wiediger-ZiAwa7FV3OQ-unsplash.jpg) no-repeat center center; 
   -webkit-background-size: cover;
@@ -201,9 +201,9 @@ body {
   background-size: cover;
 }
 .ma {
-  padding-left: 10px;
+  /* padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 5vw;
+  padding-bottom: 5vw; */
   height: 40vw;
   background: url(/img/ananth-pai-EPD9KPAEwsk-unsplash.jpg) no-repeat center center; 
   -webkit-background-size: cover;
@@ -212,9 +212,9 @@ body {
   background-size: cover;
 }
 .asset-management {
-  padding-left: 10px;
+  /* padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 5vw;
+  padding-bottom: 5vw; */
   height: 40vw;
   background: url(/img/img_service01.jpg) no-repeat center center; 
   -webkit-background-size: cover;
@@ -223,9 +223,9 @@ body {
   background-size: cover;
 }
 .consulting {
-  padding-left: 10px;
+  /* padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 5vw;
+  padding-bottom: 5vw; */
   height: 40vw;
   background: url(/img/img_service03.jpg) no-repeat center center; 
   -webkit-background-size: cover;
@@ -319,6 +319,9 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .intro-content {
   color: #000;
