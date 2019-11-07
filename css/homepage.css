@@ -126,6 +126,9 @@ body {
 .basic__address-1, .basic__address-2, .basic__address-3 {
   flex: 1;
 }
+.address-transition:hover > .address-transparent {
+  top: 0;
+}
 .company-introduction {
   height: 100%;
   position: relative;
@@ -409,6 +412,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: top 1s ease;
+}
+.address-transparent:hover {
+  top: 0;
 }
 .address-transparent-1 {
   background-color: white;
