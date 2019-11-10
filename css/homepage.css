@@ -315,7 +315,7 @@ body {
 .focus-area-container {
   margin: 5px auto;
   width: 60%;
-  height: 30vw;
+  /* height: 30vw; */
   padding: 10px;
   background-color: white;
 }
@@ -506,12 +506,15 @@ body {
   height: 80%;
 }
 .focus-transparent {
+  height: 26vw;
   padding: 20px;
   color: black;
-  background-color: rgba(255, 255, 255, .4);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#carouselExampleIndicators1 {
+  background-color: rgba(255, 255, 255, .4);
 }
 .focus-details, .focus-left {
   display: flex;
