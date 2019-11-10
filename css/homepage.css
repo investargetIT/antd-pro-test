@@ -126,8 +126,23 @@ body {
 .basic__address-1, .basic__address-2, .basic__address-3 {
   flex: 1;
 }
-.address-transition:hover > .address-transparent {
+.address-transition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address-city {
+  opacity: 1;
+  visibility: visible;
+  font-size: 18px;
+  font-weight: bold;
+  transition: opacity 1s ease;
+}
+.address-transition:hover .address-transparent {
   top: 0;
+}
+.address-transition:hover .address-city {
+  opacity: 0;
 }
 .company-introduction {
   height: 100%;
