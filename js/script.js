@@ -21,3 +21,13 @@ function handleArrowIconClicked() {
   const element = document.getElementById('basic-info');
   element.scrollIntoView({ behavior: 'smooth' });
 }
+
+const nav = document.getElementById('nav-bar');
+window.onscroll = function () {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop >= window.innerHeight) {
+    nav.classList.add('header-fixed');
+  } else {
+    nav.classList.remove('header-fixed');
+  }
+}

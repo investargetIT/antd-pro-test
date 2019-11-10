@@ -355,6 +355,18 @@ body {
   display: flex;
   align-items: center;
 }
+.header-fixed {
+  padding: 1rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .5);
+}
+.header-fixed .nav-link {
+  color: black;
+}
 .header-logo {
   display: block;
   height: 42px;
