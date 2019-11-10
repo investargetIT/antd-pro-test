@@ -509,6 +509,23 @@ body {
   padding: 20px;
   color: black;
   background-color: rgba(255, 255, 255, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.focus-details, .focus-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.focus-left {
+  align-items: center;
+}
+.focus-image {
+  width: 150px; 
+}
+.focus-operation {
+  margin: 10px 0;
 }
 .link {
   color: #10458F;
@@ -517,6 +534,7 @@ body {
 }
 .focus-title {
   margin-bottom: 20px;
+  word-break: break-all;
 }
 .slide-placeholder {
   height: 34vw;
