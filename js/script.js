@@ -3,8 +3,17 @@ const currentDate = new Date();
 const hours = currentDate.getHours();
 const coverBanner = document.getElementById('cover-banner');
 let backgroundImage = 'url(/img/photo-1509189692239-6c2bb03eac8a.jpg)';
+
 if (hours >= 17) {
   backgroundImage = 'url(/img/denys-nevozhai-D8iZPlX-2fs-unsplash.jpg)';
+  const navLinks = document.getElementsByClassName('nav-link');
+  for (let index = 0; index < navLinks.length; index++) {
+    const element = navLinks[index];
+    element.classList.add('nav-link-white');
+    element.onmouseover = function() {
+      element.style.color = 'white';
+    }
+  }
 }
 coverBanner.style.backgroundImage = backgroundImage;
 
