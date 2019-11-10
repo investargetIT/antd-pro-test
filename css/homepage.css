@@ -495,11 +495,15 @@ body {
   font-size: 14px;
 }
 .vision-transparent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  color: black;
+  color: white;
+  font-size: 20px;
   width: 80%;
   height: 80%;
-  background-color: rgba(255, 255, 255, .4);
 }
 .focus-transparent {
   padding: 20px;
