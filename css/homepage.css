@@ -506,7 +506,7 @@ body {
   height: 80%;
 }
 .focus-transparent {
-  height: 26vw;
+  height: 180px;
   padding: 20px;
   color: black;
   display: flex;
@@ -525,7 +525,9 @@ body {
   align-items: center;
 }
 .focus-image {
-  width: 150px; 
+  width: 150px;
+  display: block;
+  margin: 0 auto;
 }
 .focus-operation {
   margin: 10px 0;
@@ -536,7 +538,7 @@ body {
   overflow-wrap: break-word;
 }
 .focus-title {
-  margin-bottom: 20px;
+  /* margin-bottom: 6px; */
   word-break: break-all;
 }
 .slide-placeholder {
