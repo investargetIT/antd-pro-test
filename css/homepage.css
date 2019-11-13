@@ -547,3 +547,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+.banner-top {
+  height: 30vw;
+  background: url(/img/about_img_banner.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.header-about {
+  position: fixed;
+  width: 100%;
+}
+.header-about .nav-link {
+  color: white;
+}
+.nav-link.active {
+  text-decoration: underline;
+}
