@@ -548,6 +548,7 @@ body {
   align-items: center;
 }
 .banner-top {
+  color: white;
   height: 30vw;
   background: url(/img/about_img_banner.jpg) no-repeat center center; 
   -webkit-background-size: cover;
@@ -604,6 +605,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 1s ease;
+}
+.management-team__founder__memeber__intro {
+  display: none;
 }
 .about-us {
   background-color: white;
@@ -611,4 +616,10 @@ body {
 }
 .avatar-container {
   position: relative;
+}
+.avatar-container:hover ~ .management-team__founder__memeber__intro {
+  display: block;
+}
+.avatar-container:hover .management-team__founder__memeber__info {
+  background-color: rgba(255, 255, 255, 0);
 }
