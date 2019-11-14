@@ -554,6 +554,10 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
 .header-about {
   position: fixed;
@@ -564,4 +568,11 @@ body {
 }
 .nav-link.active {
   text-decoration: underline;
+}
+.about-text {
+  margin-top: 100px;
+  text-align: center;
+  color: black;
+  font-size: 28px;
+  font-weight: 300;
 }
