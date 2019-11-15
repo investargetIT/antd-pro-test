@@ -563,6 +563,7 @@ body {
 .header-about {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .header-about-bg {
   background-color: rgba(255, 255, 255, .8);
@@ -577,15 +578,25 @@ body {
   text-decoration: underline;
 }
 .about-text {
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
   text-align: center;
   color: black;
   font-size: 28px;
   font-weight: 300;
+  opacity: 0;
 }
 .about-images {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
   text-align: center;
-  margin-top: 100px;
+  opacity: 0;
+  /* margin-top: 100px; */
 }
 .management-team__founder {
   width: 100%;
@@ -628,4 +639,35 @@ body {
 }
 .avatar-container:hover .management-team__founder__memeber__info {
   background-color: rgba(255, 255, 255, 0);
+}
+.parallax-animation {
+  animation-duration: 1.5s;
+  animation-name: parallax;
+  animation-fill-mode: forwards;
+}
+@keyframes parallax {
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.about-text__container {
+  position: relative;
+  height: 200px;
+}
+.about-image__container {
+  position: relative;
+  height: 500px;
+}
+.about-text__num {
+  font-size: 36px;
+  color: #10458F;
+  font-weight: bold;
+}
+.intro-text {
+  margin-top: 100px;
 }
