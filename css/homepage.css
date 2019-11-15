@@ -564,8 +564,14 @@ body {
   position: fixed;
   width: 100%;
 }
+.header-about-bg {
+  background-color: rgba(255, 255, 255, .8);
+}
 .header-about .nav-link {
   color: white;
+}
+.header-about-bg .nav-link {
+  color: black;
 }
 .nav-link.active {
   text-decoration: underline;
