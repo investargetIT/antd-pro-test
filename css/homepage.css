@@ -702,3 +702,21 @@ body {
 .modal-member-container__avatar {
   flex: 4;
 }
+.modal-carousel-padding {
+  padding: 0 170px;
+}
+.modal-content-without-bg {
+  padding: 50px 0;
+  background-color: unset;
+  border: none;
+}
+.modal-close {
+  color: rgba(255, 255, 255, .5);
+  font-size: 40px;
+  position: absolute;
+  right: 50px;
+  top: 0;
+}
+.modal-close:hover {
+  color: white;
+}
