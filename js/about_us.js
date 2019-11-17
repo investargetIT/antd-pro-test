@@ -2,7 +2,7 @@ const nav = document.getElementById('nav-bar__about-us');
 const animationTargets = document.getElementsByClassName('parallax-animation__container');
 for (let index = 0; index < animationTargets.length; index++) {
   const elementTarget = animationTargets[index];
-  if (window.innerHeight> (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+  if (window.innerHeight> (elementTarget.offsetTop + 100)) {
     const childTarget = elementTarget.getElementsByClassName('parallax-animation-ready');
     childTarget[0].classList.add('parallax-animation');
   }
@@ -17,7 +17,7 @@ window.onscroll = function () {
  
   for (let index = 0; index < animationTargets.length; index++) {
     const elementTarget = animationTargets[index];
-    if (scrollTop + window.innerHeight> (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+    if (scrollTop + window.innerHeight> (elementTarget.offsetTop + 200)) {
       const childTarget = elementTarget.getElementsByClassName('parallax-animation-ready');
       childTarget[0].classList.add('parallax-animation');
     }
