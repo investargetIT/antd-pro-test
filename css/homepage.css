@@ -608,11 +608,10 @@ body {
 .management-team__founder {
   width: 100%;
   display: flex;
-  margin-top: 100px;
 }
 .management-team__founder__member {
   position: relative;
-  padding: 10px;
+  padding: 1px;
   flex: 1;
 }
 .management-team__founder__member__avatar {
@@ -642,7 +641,7 @@ body {
   position: relative;
 }
 .management-team__founder__member:hover .management-team__founder__memeber__intro {
-  display: block;
+  /* display: block; */
 }
 .avatar-container:hover .management-team__founder__memeber__info {
   background-color: rgba(255, 255, 255, 0);
