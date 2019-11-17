@@ -677,3 +677,6 @@ body {
 .intro-text {
   margin-top: 100px;
 }
+.about-images__bg {
+  width: 800px;
+}
