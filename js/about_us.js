@@ -22,5 +22,14 @@ window.onscroll = function () {
       childTarget[0].classList.add('parallax-animation');
     }
   }
-  
+}
+
+function handleTeamMemberClick(index) {
+  const allCarouselItems = document.getElementsByClassName('carousel-item');
+  for (let index = 0; index < allCarouselItems.length; index++) {
+    const element = allCarouselItems[index];
+    element.classList.remove('active');
+  }
+  allCarouselItems[index].classList.add('active');
+  $('#team-member-modal').modal();
 }

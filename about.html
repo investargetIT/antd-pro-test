@@ -78,19 +78,19 @@
 
     <div class="container management-team my-5">
       <div class="management-team__founder">
-        <div class="management-team__founder__member" data-toggle="modal" data-target=".bd-example-modal-xl">
+        <div class="management-team__founder__member" onclick="handleTeamMemberClick(0)">
           <div class="avatar-container">
             <img class="management-team__founder__member__avatar" src="/img/team-members/zhouxuan.jpg" />
             <div class="management-team__founder__memeber__info">周炫</div>
           </div>
         </div>
-        <div class="management-team__founder__member">
+        <div class="management-team__founder__member" onclick="handleTeamMemberClick(1)">
           <div class="avatar-container">
             <img class="management-team__founder__member__avatar" src="/img/team-members/caofangning.jpeg" />
             <div class="management-team__founder__memeber__info">曹芳宁</div>
           </div>
         </div>
-        <div class="management-team__founder__member">
+        <div class="management-team__founder__member" onclick="handleTeamMemberClick(2)">
           <div class="avatar-container">
             <img class="management-team__founder__member__avatar" src="/img/team-members/xupeng.jpeg" />
             <div class="management-team__founder__memeber__info">徐朋</div>
@@ -148,7 +148,7 @@
       <img class="footer-logo" src="/img/logo-big.png" />
     </div>
 
-    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+    <div id="team-member-modal" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content modal-content-without-bg">
@@ -168,7 +168,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item active">
+              <div class="carousel-item">
                 <div class="modal-member-container w-100">
                   <div class="modal-member-container__intro">
                     <div class="modal-member-container__intro__name">曹芳宁</div>
