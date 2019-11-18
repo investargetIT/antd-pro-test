@@ -670,6 +670,12 @@ body {
   position: relative;
   height: 439px;
 }
+.about-image__container-1 {
+  position: relative;
+}
+.hide {
+  visibility: hidden;
+}
 .about-text__num {
   font-size: 36px;
   color: #10458F;
@@ -679,7 +685,7 @@ body {
   margin-top: 100px;
 }
 .about-images__bg {
-  width: 800px;
+  width: 100%;
 }
 .modal-member-container {
   display: flex;
@@ -732,4 +738,10 @@ body {
 }
 .modal-close:hover {
   color: white;
+}
+.about-us__statistic {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
 }
