@@ -691,13 +691,26 @@ body {
 }
 .modal-member-container__intro__name {
   font-size: 28px;
-  font-weight: 300;
+  margin: 4px 0;
 }
 .modal-member-container__intro__content {
   font-size: 13px;
   font-weight: 300;
   margin: 30px 0;
   line-height: 1.8;
+}
+.modal-member-container__intro__invest {
+  color: #999;
+  font-weight: 300;
+  font-size: 14px;
+}
+.modal-member-container__intro__title {
+  font-size: 17px;
+  font-weight: 300;
+  color: #10458F;
+}
+.modal-member-container__intro__degree {
+  font-size: 14px;
 }
 .modal-member-container__avatar {
   flex: 4;
