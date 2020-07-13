@@ -1,733 +1,227 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-
-    <title>多维海拓 Investarget</title>
-    <meta name="keywords" content="多维海拓 Investarget">
-    <meta name="description" itemprop="description" content="多维海拓 Investarget">
-    <meta name="description" content="blank page">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="shortcut icon" href="/img/page_logo.png" type="image/x-icon">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/homepage.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="antd,umi,umijs,ant design,&#x811A;&#x624B;&#x67B6;,&#x5E03;&#x5C40;, Ant Design,&#x9879;&#x76EE;,Pro,admin,&#x63A7;&#x5236;&#x53F0;,&#x4E3B;&#x9875;,&#x5F00;&#x7BB1;&#x5373;&#x7528;,&#x4E2D;&#x540E;&#x53F0;,&#x89E3;&#x51B3;&#x65B9;&#x6848;,&#x7EC4;&#x4EF6;&#x5E93;"
+    />
+    <meta
+      name="description"
+      content="
+    An out-of-box UI solution for enterprise applications as a React boilerplate."
+    />
+    <meta
+      name="description"
+      content="
+      &#x5F00;&#x7BB1;&#x5373;&#x7528;&#x7684;&#x4E2D;&#x53F0;&#x524D;&#x7AEF;/&#x8BBE;&#x8BA1;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Ant Design Pro</title>
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/umi.64a3c74e.css" />
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.2.7
+    </script>
   </head>
   <body>
-    <div id="cover-banner" class="cover-bg w-100">
-      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      
-        <div id="nav-bar" class="header">
-          <div class="logo-container">
-            <img class="header-logo" src="/img/logo-big.png" />
-          </div>
-          <div class="nav-bar">
-            <div class="nav-item">
-              <a class="nav-link" href="/about.html">关于我们</a>
-            </div>
-            <div class="nav-item">
-              <a class="nav-link" href="#">海拓服务</a>
-            </div>
-            <div class="nav-item">
-              <a class="nav-link" href="#">平台介绍</a>
-            </div>
-            <div class="nav-item">
-              <a class="nav-link" href="#">新闻中心</a>
-            </div>
-            <div class="nav-item">
-              <a class="nav-link" href="#">加入我们</a>
-            </div>
+    <noscript>Out-of-the-box mid-stage front/design solution!</noscript>
+    <div id="root">
+      <style>
+        html,
+        body,
+        #root {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        #root {
+          background-image: url("/home_bg.png");
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+        }
+        .page-loading-warp {
+          padding: 98px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .ant-spin {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 14px;
+          font-variant: tabular-nums;
+          line-height: 1.5;
+          list-style: none;
+          -webkit-font-feature-settings: "tnum";
+          font-feature-settings: "tnum";
+          position: absolute;
+          display: none;
+          color: #1890ff;
+          text-align: center;
+          vertical-align: middle;
+          opacity: 0;
+          -webkit-transition: -webkit-transform 0.3s
+            cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: -webkit-transform 0.3s
+            cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+            -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+        }
+
+        .ant-spin-spinning {
+          position: static;
+          display: inline-block;
+          opacity: 1;
+        }
+
+        .ant-spin-dot {
+          position: relative;
+          display: inline-block;
+          font-size: 20px;
+          width: 20px;
+          height: 20px;
+        }
+
+        .ant-spin-dot-item {
+          position: absolute;
+          display: block;
+          width: 9px;
+          height: 9px;
+          background-color: #1890ff;
+          border-radius: 100%;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75);
+          -webkit-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          opacity: 0.3;
+          -webkit-animation: antSpinMove 1s infinite linear alternate;
+          animation: antSpinMove 1s infinite linear alternate;
+        }
+
+        .ant-spin-dot-item:nth-child(1) {
+          top: 0;
+          left: 0;
+        }
+
+        .ant-spin-dot-item:nth-child(2) {
+          top: 0;
+          right: 0;
+          -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+        }
+
+        .ant-spin-dot-item:nth-child(3) {
+          right: 0;
+          bottom: 0;
+          -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+        }
+
+        .ant-spin-dot-item:nth-child(4) {
+          bottom: 0;
+          left: 0;
+          -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+        }
+
+        .ant-spin-dot-spin {
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-animation: antRotate 1.2s infinite linear;
+          animation: antRotate 1.2s infinite linear;
+        }
+
+        .ant-spin-lg .ant-spin-dot {
+          font-size: 32px;
+          width: 32px;
+          height: 32px;
+        }
+
+        .ant-spin-lg .ant-spin-dot i {
+          width: 14px;
+          height: 14px;
+        }
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          .ant-spin-blur {
+            background: #fff;
+            opacity: 0.5;
+          }
+        }
+
+        @-webkit-keyframes antSpinMove {
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes antSpinMove {
+          to {
+            opacity: 1;
+          }
+        }
+
+        @-webkit-keyframes antRotate {
+          to {
+            -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+          }
+        }
+
+        @keyframes antRotate {
+          to {
+            -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+          }
+        }
+      </style>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          min-height: 420px;
+          height: 100%;
+        "
+      >
+        <img src="/pro_icon.svg" alt="logo" width="256" />
+        <div class="page-loading-warp">
+          <div class="ant-spin ant-spin-lg ant-spin-spinning">
+            <span class="ant-spin-dot ant-spin-dot-spin"
+              ><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i
+              ><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i
+            ></span>
           </div>
         </div>
-      
-        <main role="main" class="inner cover text-center">
-          <h1 class="cover-heading">海之彼岸 拓土画疆</h1>
-          <p class="lead">中国跨境投资生态系统</p>
-          <p class="">
-            <a href="#" class="login btn btn-primary">登录</a>
-          </p>
-        </main>
-      
-        <footer class="mastfoot text-center">
-          <div class="inner">
-            <div class="arrow" onClick="handleArrowIconClicked()"></div>
-          </div>
-        </footer>
+        <div
+          style="display: flex; justify-content: center; align-items: center;"
+        >
+          <img
+            src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+            width="32"
+            style="margin-right: 8px;"
+          />
+          Ant Design
+        </div>
       </div>
     </div>
 
-    <div id="basic-info" class="py-4 basic">
-      <div class="basic__introduction">
-        <div class="address-transition company-introduction">
-          <div class="section-title w-100">
-            <div class="section-title-zh">公司简介</div>
-            <div class="section-title-divider"></div>
-            <div class="section-title-en">About US</div>
-          </div>
-          <div class="address-transparent address-transparent-1"> 
-            <div class="intro-content">提供全球化资源协同的跨境产业精品投行，拥有极强战略咨询赋能团队，一站式投顾服务，陪伴全球杰出创新企业全生命周期成长和财富管理</div>
-          </div>
-        </div>
-      </div>
-      <div class="basic__address-1">
-        <div class="address-transition address-1">
-          <div class="address-city">上海</div>
-          <div class="address-transparent">
-            <div class="address-country">中国</div>
-            <div class="address-details">上海市徐汇区虹桥路777号汇京国际广场17层7单元</div>
-          </div>
-        </div>
-      </div>
-      <div class="basic__address-2">
-        <div class="address-transition address-2">
-          <div class="address-city">美国</div>
-          <div class="address-transparent">
-            <div class="address-country">美国</div>
-            <div class="address-details">加利福尼亚州 旧金山 加利福尼亚街50号15楼1520室</div>
-          </div>
-        </div>
-      </div>
-      <div class="basic__address-3">
-        <div class="address-transition address-3">
-          <div class="address-city">北京</div>
-          <div class="address-transparent">
-            <div class="address-country">中国</div>
-            <div class="address-details">北京市朝阳区建国门外大街1号国贸写字楼1座1426室</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="my-4 business-intro">
-      <div class="section-title">
-        <div class="section-title-zh">业务介绍</div>
-        <div class="section-title-divider"></div>
-        <div class="section-title-en">Our Business</div>
-      </div>
-    </div>
-
-    <div class="business-content">
-      <div class="private-finance">
-        <div class="transparent">
-          <div class="business-title">
-            <div class="business-title-zh">股权融资</div>
-            <div class="business-title-divider"></div>
-            <div class="business-title-en">Private Placement</div>
-          </div>
-          <div class="business-details">我们为客户提供包括少数股，权融资、少数股权转让、战略投资者定向开发、投资者财团构建、拆分和股权剥离等在内的业务服务。</div>
-        </div>
-      </div>
-      <div class="ma">
-        <div class="transparent">
-          <div class="business-title">
-            <div class="business-title-zh">兼并收购</div>
-            <div class="business-title-divider"></div>
-            <div class="business-title-en">M&A</div>
-          </div>
-          <div class="business-details">我们拥有不同情境下进行兼并收购的丰富经验，为客户提供资产处置、资产重组、兼并收购、公开要约收购、退市及私有化等业务服务。</div>
-        </div>
-      </div>
-      <div class="asset-management">
-        <div class="transparent">
-          <div class="business-title">
-            <div class="business-title-zh">资产管理</div>
-            <div class="business-title-divider"></div>
-            <div class="business-title-en">Asset Management</div>
-          </div>
-          <div class="business-details">我们帮助机构投资者在大中华区完成项目配资及基金募集，投资团队有丰富的投资和投后管理经验，寻找全球具有稀缺性的优质企业进行投资，目前正在管理多维海拓与聚龙股份成立的产业基金。</div>
-        </div>
-      </div>
-      <div class="consulting">
-        <div class="transparent">
-          <div class="business-title">
-            <div class="business-title-zh">战略顾问</div>
-            <div class="business-title-divider"></div>
-            <div class="business-title-en">Consulting&Strategy</div>
-          </div>
-          <div class="business-details">为公司和股东提供复杂的金融市场解决方案，以经验、判断和科学的方法寻找客户隐藏的价值，并由此创造机会，包括上市辅导顾问、战略咨询服务、可行性研究、商务谈判等。</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="vision">
-      <div class="my-4">
-        <div class="section-title">
-          <div class="section-title-zh">愿景和使命</div>
-          <div class="section-title-divider"></div>
-          <div class="section-title-en">Vision & Mission</div>
-        </div>
-      </div>
-      <!-- <div class="my-4 vision-content">
-            <div class="industry">
-              <div class="vision-transparent">
-                <div class="">产业</div>
-                <div class="">xxxx</div>
-              </div>
-            </div>
-            <div class="oversea">
-              <div class="vision-transparent">
-                <div class="">跨境</div>
-                <div class="">xxxx</div>
-              </div>
-            </div>
-            <div class="responsiblity">
-              <div class="vision-transparent">
-                <div class="">赋能</div>
-                <div class="">xxxx</div>
-              </div>
-            </div>
-          </div> -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="w-100 slide-placeholder slide-1" alt="First slide">
-              <div class="vision-transparent">
-                <div class="">产业：专注新兴产业投资机会</div>
-                <div>重点关注：大健康、工业与科技、消费升级、汽车领域</div>
-                <div>我们具备丰富的行业实操经验，为企业战略发展提供专业建议</div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="w-100 slide-placeholder slide-2" alt="Second slide">
-              <div class="vision-transparent">
-                <div class="">跨境：助力中国资本跨境布局</div>
-                <div>我们开发的标的来自于全球50多个国家和地区，并与知名跨国投行、券商合作挖掘优质标的</div>
-                <div>中国资本与全球产业发展相协同，并制定从筛选、尽调到投后管理的完整方案</div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="w-100 slide-placeholder slide-3" alt="Third slide">
-              <div class="vision-transparent">
-                <div class="">赋能：为新兴产业的发展赋能</div>
-                <div>我们相信良好的资本运作将推动科技产业快速发展，投融资作为企业转型升级和开拓市场的重要一环</div>
-                <div>借助我们丰富的资源，中国资本将塑造更多可能性</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    
-    </div>
-
-    <div class="focus-area">
-      <div class="my-4">
-        <div class="section-title">
-          <div class="section-title-zh">聚焦领域</div>
-          <div class="section-title-divider"></div>
-          <div class="section-title-en">Focus Area</div>
-        </div>
-      </div>
-      <div class="focus-area-container">
-        <div class="focus-area-1 w-100 h-100">
-
-            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/yizhunzhineng.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">医准智能：人工只能辅助医疗影像诊断服务商</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a href="https://mp.weixin.qq.com/s/ba4phDIVgXlPJyGGaQlJDA">
-                            <span class="link">https://mp.weixin.qq.com/s/ba4phDIVgXlPJyGGaQlJDA</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/langmufeng.png" />
-                        <!-- <div class="focus-operation">朗玛峰创投</div>
-                        <div class="">USD 4,500,000</div> -->
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">锦葵医疗：致力于先天性心脏病治疗装置的研制与开发</div>
-                        <div class="focus-title">新闻链接：无</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/guoyao.png" />
-                        <!-- <div class="focus-operation">并购</div>
-                        <img class="focus-image" src="/img/logo-yizhunzhineng.png" /> -->
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">柯瑞森：国药集团联合优秀技术团队打造的辅助生殖平台</div>
-                        <div class="focus-title">新闻链接：无</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/zhaoshangju.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">诺灵生物：专注于新一代抗体偶联技术的药物研发公司</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465178&idx=1&sn=38d6d4676df4642c778249778a2b1581&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465178&idx=1&sn=38d6d4676df4642c778249778a2b1581&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-
-         
-
-        </div>
-      </div>
-      <!-- <div class="focus-area-container">
-        <div class="focus-area-2 w-100 h-100">
-          <div class="focus-transparent w-100 h-100">
-            <div class="row w-100">
-              <div class="col col-5">
-                <img class="focus-image w-100 h-100" src="https://fakeimg.pl/300x300/?text=Image" />
-              </div>
-              <div class="col col-7">
-                <div class="focus-title">医准智能：人工只能辅助医疗影像诊断服务商</div>
-                <div class="focus-title">新闻链接：无
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="focus-area-container">
-        <div class="focus-area-2 w-100 h-100">
-
-            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="7"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="8"></li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="9"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/holovis.png" />
-                        <!-- <div class="focus-operation">并购</div>
-                        <img class="focus-image" src="/img/logo-yizhunzhineng.png" /> -->
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">Holovis：英国虚拟沉浸技术解决方案提供商</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652464496&idx=1&sn=2d631f6fd028f8f0c1f9e4ff387e0cca&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652464496&idx=1&sn=2d631f6fd028f8f0c1f9e4ff387e0cca&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                
-                </div>
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/udesk.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">Udesk：国内领先的全场景智能客服系统提供商</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465128&idx=1&sn=e9c9a27c840e139f8d21567bfff25d72&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465128&idx=1&sn=e9c9a27c840e139f8d21567bfff25d72&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/udesk2.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">Udesk：国内领先的全场景智能客服系统提供商</div>
-                        <div class="focus-title">新闻链接：无</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/fli.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">FLI Global：欧洲领先的综合土壤修复解决方案提供商</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a
-                            href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=504979860&idx=1&sn=1dc8d6d79f1f956b8a5836ac03c94dc4&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span
-                              class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=504979860&idx=1&sn=1dc8d6d79f1f956b8a5836ac03c94dc4&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/honor-alliance.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">同创永益：国内业务连续性和容灾管理领域的领军企业</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a
-                            href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465416&idx=1&sn=3e5fbb08d5a12fddeea89b2ef1cfc849&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span
-                              class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465416&idx=1&sn=3e5fbb08d5a12fddeea89b2ef1cfc849&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/yunquna1.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">运去哪：国内领先的一站式国际物流服务平台</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a
-                            href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465320&idx=1&sn=b5ed5688c3266d71e1eb93b7761f9a4c&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span
-                              class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465320&idx=1&sn=b5ed5688c3266d71e1eb93b7761f9a4c&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/haixinkeji.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">FLI Global：欧洲领先的综合土壤修复解决方案提供商</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a
-                            href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=504979860&idx=1&sn=1dc8d6d79f1f956b8a5836ac03c94dc4&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span
-                              class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=504979860&idx=1&sn=1dc8d6d79f1f956b8a5836ac03c94dc4&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/yunquna2.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">运去哪：国内领先的一站式国际物流服务平台</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a
-                            href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465360&idx=1&sn=82981446e75444dfaf042f2bf408a10c&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span
-                              class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465360&idx=1&sn=82981446e75444dfaf042f2bf408a10c&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/zhiyinzhihui.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">知因智慧：国内领先的产业链金融AI赋能和运营商</div>
-                        <div class="focus-title">新闻链接：无</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/eoi.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">擎创科技：国内首家智能运维AIOps落地解决方案供应商</div>
-                        <div class="focus-title">新闻链接：无</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-
-         
-
-        </div>
-      </div>
-
-      <!-- <div class="focus-area-container">
-        <div class="focus-area-3 w-100 h-100">
-          <div class="focus-transparent w-100 h-100">
-            <div class="row w-100">
-              <div class="col col-5">
-                <img class="focus-image w-100 h-100" src="https://fakeimg.pl/300x300/?text=Image" />
-              </div>
-              <div class="col col-7">
-                <div class="focus-title">医准智能：人工只能辅助医疗影像诊断服务商</div>
-                <div class="focus-title">新闻链接：
-                  <a href="https://mp.weixin.qq.com/s/ba4phDIVgXlPJyGGaQlJDA">
-                    <span class="link">https://mp.weixin.qq.com/s/ba4phDIVgXlPJyGGaQlJDA</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="focus-area-container">
-        <div class="focus-area-3 w-100 h-100">
-
-            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/bilibili.png" />
-                        <!-- <div class="focus-operation">并购</div>
-                        <img class="focus-image" src="/img/logo-yizhunzhineng.png" /> -->
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">BiliBili：国内知名的视频弹幕网站</div>
-                        <div class="focus-title">新闻链接：无</div>
-                      </div>
-                    </div>
-                  </div>
-                
-                </div>
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/kuaisuwang.png" />
-                        <!-- <div class="focus-operation">朗玛峰创投</div>
-                        <div class="">USD 4,500,000</div> -->
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">快塑网： 塑化产业数字化的云服务平台</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465190&idx=1&sn=4226d5662315fd888add02319c956f69&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465190&idx=1&sn=4226d5662315fd888add02319c956f69&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/jiayouxueba.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">家有学霸：真人1对1、 C2C平台型在线教育企业</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465391&idx=1&sn=a7adddae8ba8f0aa178a01732cf67ff0&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465391&idx=1&sn=a7adddae8ba8f0aa178a01732cf67ff0&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/zhongkejuxin.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">中科聚信： 中国大数据智能分析与金融科技领域的代表企业</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a
-                            href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465250&idx=1&sn=50d0dfbebc03c5541d825a76a837a4c4&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span
-                              class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465250&idx=1&sn=50d0dfbebc03c5541d825a76a837a4c4&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="focus-transparent w-100">
-                    <div class="row w-100">
-                      <div class="col col-5 focus-left">
-                        <img class="focus-image" src="/img/chuman.png" />
-                      </div>
-                      <div class="col col-7 focus-details">
-                        <div class="focus-title">触漫： 国内头部的泛二次元创作社区</div>
-                        <div class="focus-title">
-                          <span>新闻链接：</span>
-                          <a
-                            href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465370&idx=1&sn=ced799ecdb8aa7e1019c2f3e0a25fcd9&scene=19&token=1271111519&lang=zh_CN#wechat_redirect">
-                            <span
-                              class="link">https://mp.weixin.qq.com/s?__biz=MzIyMjIxODkzNQ==&mid=2652465370&idx=1&sn=ced799ecdb8aa7e1019c2f3e0a25fcd9&scene=19&token=1271111519&lang=zh_CN#wechat_redirect</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-
-         
-
-        </div>
-      </div>
-
-      
-    </div>
-
-    <div class="footer">
-      <img class="footer-logo" src="/img/logo-big.png" />
-    </div>
-
-    <!-- Optional JavaScript -->
-    <script src="/js/script.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/umi.406a10c6.js"></script>
   </body>
 </html>
