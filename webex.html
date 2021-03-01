@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+  <div id="root">
+    <form id="webexform" action="https://investarget.webex.com.cn/investarget/p.php" method="post">
+      <input name="AT" Type="text" value="LI" size="30" /><br>
+      <input id="wid" name="WID" Type="text" value="" size="30" /><br>
+      <input id="pw" name="PW" Type="text" value="" size="30" /><br>
+      <input id="behavior" name="MU" Type="text" value="https://investarget.webex.com.cn/investarget/m.php?AT=HM&MK=186399183"
+        size="75" /><br>
+      <input type="submit" text="submit" />
+    </form>
+  </div>
+  <script>
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+
+      var wid = url.searchParams.get('wid');
+      var widInput = document.getElementById('wid');
+      widInput.value = wid;
+
+      var pw = url.searchParams.get('pw');
+      var pwInput = document.getElementById('pw');
+      pwInput.value = pw;
+
+      var mk = url.searchParams.get('mk');
+      var input = document.getElementById('behavior');
+      input.value = `https://investarget.webex.com.cn/investarget/m.php?AT=HM&MK=${mk}`;
+
+      document.getElementById('webexform').submit();
+  </script>
+</body>
+
+</html>
