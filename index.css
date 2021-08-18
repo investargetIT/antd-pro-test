@@ -26053,3 +26053,22 @@ tr.ant-table-expanded-row .ant-descriptions-view table {
 .visible___3qaNK:hover {
   cursor: pointer;
 }
+.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1:hover td {
+    background: none;
+}
+
+.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1:hover tr:hover {
+    background: #f0f6fc;
+}
+
+.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1>td {
+    padding: 0 0;
+}
+
+.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1>td:first-child {
+    background: white;
+}
+
+.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1 table {
+    padding: 0 0;
+}
