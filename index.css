@@ -25955,25 +25955,7 @@ span.data-grid-container, span.data-grid-container:focus {
 .link___311BI:hover {
   text-decoration: underline;
 }
-.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1:hover td {
-    background: none;
-}
-
-.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1:hover tr:hover {
-    background: #f0f6fc;
-}
-
-.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1>td {
-    padding: 0 0;
-}
-
-.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1>td:first-child {
-    background: white;
-}
-
-.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1 table {
-    padding: 0 0;
-}/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
@@ -26091,4 +26073,23 @@ span.data-grid-container, span.data-grid-container:focus {
 }
 .ant-divider-rtl.ant-divider-horizontal.ant-divider-with-text-right::after {
   width: 95%;
+}
+.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1:hover td {
+    background: none;
+}
+
+.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1:hover tr:hover {
+    background: #f0f6fc;
+}
+
+.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1>td {
+    padding: 0 0;
+}
+
+.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1>td:first-child {
+    background: white;
+}
+
+.new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1 table {
+    padding: 0 0;
 }
