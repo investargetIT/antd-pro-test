@@ -2,127 +2,6 @@
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
-
-html, body, #root {
-  height: 100%;
-}
-
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
-}
-
-.ant-layout-sider-collapsed .ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
-  display: none;
-}
-
-.other-talk-bubble:before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  top: 10px;
-  width: 0;
-  height: 0;
-
-  border-top: 4px solid transparent;
-  border-right: 6px solid white;
-  border-bottom: 4px solid transparent;
-}
-.my-talk-bubble:after {
-  content: "";
-  position: absolute;
-  left: 100%;
-  top: 10px;
-  width: 0;
-  height: 0;
-
-  border-top: 4px solid transparent;
-  border-left: 6px solid rgb(229, 243, 253);
-  border-bottom: 4px solid transparent;
-}
-.ant-input {
-  line-height: 1.5;
-}
-th {
-  white-space: nowrap;
-}
-
-
-.span-title {
-  display: inline-block;
-  max-width: 200px;
-}
-.span-operation {
-  display: inline-block;
-  max-width: 240px;
-}
-.span-phase {
-  display: inline-block;
-  max-width: 150px;
-  word-break: keep-all;
-}
-.span-tag {
-  display: inline-block;
-  max-width: 150px;
-  word-break: keep-all;
-}
-
-.span-operation > button,.span-operation > a {
-  margin-right: 4px;
-  margin-bottom: 4px;
-  display: inline-block;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.dataroom-cell-banner-bg:hover{
-  background-color: rgba(0, 0, 0, .5);
-  cursor: pointer;
-  background-image: url(/images/folder-solid.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.orgbd-cell-banner-bg:hover{
-  background-color: rgba(0, 0, 0, .5);
-  cursor: pointer;
-  background-image: url(/images/tasks-solid.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.dynamic-delete-button {
-  cursor: pointer;
-  position: relative;
-  top: 4px;
-  font-size: 24px;
-  color: #999;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-.dynamic-delete-button:hover {
-  color: #777;
-}
-.dynamic-delete-button[disabled] {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-.customized-select-component .ant-select-selection {
-  background-color: #eee;
-  color: #555;
-}
-.ant-collapse > .investarget-custom-panel.ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
-  top: 18px;
-}
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable */
@@ -2179,6 +2058,222 @@ html {
   -webkit-transition: height 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
   -o-transition: height 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
   transition: height 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.ant-message {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum';
+          font-feature-settings: 'tnum';
+  position: fixed;
+  top: 8px;
+  left: 0;
+  z-index: 1010;
+  width: 100%;
+  pointer-events: none;
+}
+.ant-message-notice {
+  padding: 8px;
+  text-align: center;
+}
+.ant-message-notice-content {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: all;
+}
+.ant-message-success .anticon {
+  color: #52c41a;
+}
+.ant-message-error .anticon {
+  color: #E64547;
+}
+.ant-message-warning .anticon {
+  color: #faad14;
+}
+.ant-message-info .anticon,
+.ant-message-loading .anticon {
+  color: #339bd2;
+}
+.ant-message .anticon {
+  position: relative;
+  top: 1px;
+  margin-right: 8px;
+  font-size: 16px;
+}
+.ant-message-notice.move-up-leave.move-up-leave-active {
+  -webkit-animation-name: MessageMoveOut;
+          animation-name: MessageMoveOut;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+@-webkit-keyframes MessageMoveOut {
+  0% {
+    max-height: 150px;
+    padding: 8px;
+    opacity: 1;
+  }
+  100% {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+  }
+}
+@keyframes MessageMoveOut {
+  0% {
+    max-height: 150px;
+    padding: 8px;
+    opacity: 1;
+  }
+  100% {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+  }
+}
+.ant-message-rtl {
+  direction: rtl;
+}
+.ant-message-rtl span {
+  direction: rtl;
+}
+.ant-message-rtl .anticon {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+}
+
+.ant-layout-sider-collapsed .ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
+  display: none;
+}
+
+.other-talk-bubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 10px;
+  width: 0;
+  height: 0;
+
+  border-top: 4px solid transparent;
+  border-right: 6px solid white;
+  border-bottom: 4px solid transparent;
+}
+.my-talk-bubble:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 10px;
+  width: 0;
+  height: 0;
+
+  border-top: 4px solid transparent;
+  border-left: 6px solid rgb(229, 243, 253);
+  border-bottom: 4px solid transparent;
+}
+.ant-input {
+  line-height: 1.5;
+}
+th {
+  white-space: nowrap;
+}
+
+
+.span-title {
+  display: inline-block;
+  max-width: 200px;
+}
+.span-operation {
+  display: inline-block;
+  max-width: 240px;
+}
+.span-phase {
+  display: inline-block;
+  max-width: 150px;
+  word-break: keep-all;
+}
+.span-tag {
+  display: inline-block;
+  max-width: 150px;
+  word-break: keep-all;
+}
+
+.span-operation > button,.span-operation > a {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.dataroom-cell-banner-bg:hover{
+  background-color: rgba(0, 0, 0, .5);
+  cursor: pointer;
+  background-image: url(/images/folder-solid.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.orgbd-cell-banner-bg:hover{
+  background-color: rgba(0, 0, 0, .5);
+  cursor: pointer;
+  background-image: url(/images/tasks-solid.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dynamic-delete-button {
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  font-size: 24px;
+  color: #999;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.dynamic-delete-button:hover {
+  color: #777;
+}
+.dynamic-delete-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.customized-select-component .ant-select-selection {
+  background-color: #eee;
+  color: #555;
+}
+.ant-collapse > .investarget-custom-panel.ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  top: 18px;
 }
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
@@ -6936,101 +7031,6 @@ span.ant-radio + * {
 
 .sider-menu___37GWD::-webkit-scrollbar {
   display: none;
-}
-/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
-/* stylelint-disable no-duplicate-selectors */
-/* stylelint-disable */
-/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
-.ant-message {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.85);
-  font-size: 14px;
-  font-variant: tabular-nums;
-  line-height: 1.5715;
-  list-style: none;
-  -webkit-font-feature-settings: 'tnum';
-          font-feature-settings: 'tnum';
-  position: fixed;
-  top: 8px;
-  left: 0;
-  z-index: 1010;
-  width: 100%;
-  pointer-events: none;
-}
-.ant-message-notice {
-  padding: 8px;
-  text-align: center;
-}
-.ant-message-notice-content {
-  display: inline-block;
-  padding: 10px 16px;
-  background: #fff;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
-  pointer-events: all;
-}
-.ant-message-success .anticon {
-  color: #52c41a;
-}
-.ant-message-error .anticon {
-  color: #E64547;
-}
-.ant-message-warning .anticon {
-  color: #faad14;
-}
-.ant-message-info .anticon,
-.ant-message-loading .anticon {
-  color: #339bd2;
-}
-.ant-message .anticon {
-  position: relative;
-  top: 1px;
-  margin-right: 8px;
-  font-size: 16px;
-}
-.ant-message-notice.move-up-leave.move-up-leave-active {
-  -webkit-animation-name: MessageMoveOut;
-          animation-name: MessageMoveOut;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-}
-@-webkit-keyframes MessageMoveOut {
-  0% {
-    max-height: 150px;
-    padding: 8px;
-    opacity: 1;
-  }
-  100% {
-    max-height: 0;
-    padding: 0;
-    opacity: 0;
-  }
-}
-@keyframes MessageMoveOut {
-  0% {
-    max-height: 150px;
-    padding: 8px;
-    opacity: 1;
-  }
-  100% {
-    max-height: 0;
-    padding: 0;
-    opacity: 0;
-  }
-}
-.ant-message-rtl {
-  direction: rtl;
-}
-.ant-message-rtl span {
-  direction: rtl;
-}
-.ant-message-rtl .anticon {
-  margin-right: 0;
-  margin-left: 8px;
 }
 
 .content___3daJj::-webkit-scrollbar {
