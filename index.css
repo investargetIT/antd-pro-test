@@ -24517,7 +24517,14 @@ tr.ant-table-expanded-row .ant-descriptions-view table {
 }
 .create-comment-icon___XH6Gm:hover {
     color: #59b4de;
-}/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+}
+.icon-modal-operation___3r2Y9 {
+    color: gray;
+}
+.icon-modal-operation___3r2Y9:hover {
+    color: black;
+}
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
