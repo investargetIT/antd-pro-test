@@ -22944,6 +22944,12 @@ tr.ant-table-expanded-row .ant-descriptions-view table {
 }
 .bd-status-6___2gAEn {
   background: #999;
+}
+.icon-modal-operation___Cyun7 {
+  color: gray;
+}
+.icon-modal-operation___Cyun7:hover {
+  color: black;
 }.dynamic-delete-button___3wcsU {
   cursor: pointer;
   position: absolute;
