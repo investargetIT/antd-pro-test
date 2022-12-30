@@ -26939,7 +26939,9 @@ div.ant-typography-edit-content.ant-typography-rtl {
   margin: 0 20px 0 0;
   padding: 0 4px 0 0;
 }
-.link___311BI:hover {
+.current-row___1uFVA {
+    background: #fafafa;
+}.link___311BI:hover {
   text-decoration: underline;
 }
 .new-org-db-style tr.ant-table-expanded-row.ant-table-expanded-row-level-1:hover td {
