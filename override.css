@@ -637,6 +637,12 @@ label.login-register-form__container__label {
 .timeline-steps .ant-steps-item-title {
   width: 100%;
 }
+.fa-timeline-steps {
+  min-height: 500px;
+}
+.fa-timeline-steps > .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-tail::after, .fa-timeline-steps > .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-tail::after {
+  background-color: rgba(0, 0, 0, .25);
+}
 .timeline-icon-btn.ant-btn-link {
   color: #989898;
 }
@@ -812,6 +818,47 @@ a.expired-project, button.expired-project, button.expired-project:hover {
 }
 .form-item-select-without-white-space .ant-select-multiple .ant-select-selection-item-content {
   white-space: unset;
+}
+.fa-form.ant-form {
+  border-left: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+}
+.fa-form-item.ant-form-item, .fa-upload-form-item.ant-form-item {
+  margin-bottom: 0;
+  align-items: center;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+.fa-form-item.ant-form-item > .ant-form-item-label {
+  background-color: #eee;
+  padding-left: 12px;
+  border-right: 1px solid #d9d9d9;
+}
+.fa-upload-form-item.ant-form-item {
+  background-color: #eee;
+  padding-left: 12px;
+}
+.fa-upload-form-item.ant-form-item > .ant-form-item-label > label {
+  height: 64px;
+}
+.fa-form-item.ant-form-item > .ant-form-item-label > label, .fa-upload-form-item.ant-form-item > .ant-form-item-label > label {
+  color: #616161;
+  margin-bottom: 0 !important;
+}
+.fa-form-item .ant-input, .fa-form-item .ant-picker {
+  border: none;
+}
+.fa-form-item.ant-form-item .ant-form-item-explain {
+  display: none;
+}
+.fa-form-item.ant-form-item-has-error .ant-picker, .fa-form-item.ant-form-item-has-error .ant-input {
+  border: 1px solid #f2726f;
+}
+.fa-form-item .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: none;
+}
+.fa-form-item .ant-cascader-picker:focus .ant-cascader-input {
+  box-shadow: none;
 }
 @media (max-width: 767px) {
   .remove-on-mobile {
